@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cars</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/common.css">
+</head>
+<body class="onload">
+<div class="container">
+    <canvas id="canvas">Your browser does not support canvas.</canvas>
+    <canvas id="bgcanvas">Your browser does not support canvas.</canvas>
+</div>
+<script src="js/cars.polyfill.js"></script>
+<script src="js/Sprites.js"></script>
+<script src="js/Prerenderer.js"></script>
+<script src="js/CollisionDetector.js"></script>
+<script src="js/Renderer.js"></script>
+<script src="js/InputManager.js"></script>
+<script src="js/Game.js"></script>
+<script>
+    requestAnimationFrame(function () {
+        window.game = new Game();
+    });
+</script>
+</body>
+</html>
